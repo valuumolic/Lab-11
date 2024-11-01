@@ -1,1 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto 3</title>
+</head>
+<body>
+    <script>
+        let monto = parseFloat(prompt("Ingrese el monto total de su compra: "));
 
+        let montoFinal;
+        if(monto > 100){
+            montoFinal = monto - (monto*0.1)
+        }else if(monto <= 100){
+            montoFinal = monto;
+        }
+
+        console.log("Su monto final es de: " + montoFinal);
+    </script>
+</body>
+</html>
