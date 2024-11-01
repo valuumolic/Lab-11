@@ -1,1 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numeroAleatorio = Math.round(Math.random() * (10-1) + 1);
+        console.log(numeroAleatorio);
+        let numeroAdivinado = parseInt(prompt("Ingrese un numero del 1 al 10 para intentar adivinar el numeor generado: "));
 
+        if(numeroAdivinado == numeroAleatorio){
+            console.log("¡Felicidades, adivinaste el número!");
+        }else{
+            console.log("Lo siento, el número era: " + numeroAleatorio);
+        }
+    </script>
+</body>
+</html>
